@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:padding="0dp"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:background="@drawable/rounded_card_background">
+
+    <!-- Imagen Circular -->
+    <ImageView
+        android:id="@+id/place_image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="start|center_vertical"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circular_image_background"
+        android:clipToOutline="true" />
+
+    <!-- Texto superpuesto sobre la imagen y el fondo de la tarjeta -->
+    <TextView
+        android:id="@+id/place_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:text="Claustro de la Compañía"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:paddingStart="30dp"
+        android:gravity="center" />
+
+</FrameLayout>
+
